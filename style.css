@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .clearfix::after{
     content: "";
     display: block;
@@ -69,6 +73,117 @@ li{
     bottom: 0;
     width: 100%;
     border-radius: 10px;
+}
+
+.blocco_sez2{
+    min-height: 500px;
+    margin-bottom: 5px;
+}
+.superiore{
+    padding: 20px 0;
+}
+
+.superiore p{
+    color: grey;
+}
+
+
+.inferiore{
+    position: relative;
+}
+
+
+[id^="img"]{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.col_1::after{
+    content: "";
+    display: block;
+    background-color: black;
+    opacity: 0.2;
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    top: 0;
+}
+
+.col_2::after{
+    content: "";
+    display: block;
+    background-color: black;
+    opacity: 0.2;
+    position: absolute;
+    height: 200px;
+    width: calc(100% - 300px - 300px - 10px - 10px);
+    border-radius: 10px;
+    top: 0;
+}
+.col_3::after{
+    content: "";
+    display: block;
+    background-color: black;
+    opacity: 0.2;
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    top: 0;
+}
+
+.blocco_sez2{
+    min-height: 700px;
+    margin-bottom: 5px;
+}
+
+.col{
+    min-height: calc(700px - 80px - 20px - 15px);
+    float: left;
+}
+
+.col_1,.col_3{
+    width: 300px;
+}
+
+.col_2{
+    width: calc(100% - 300px - 300px - 10px - 10px);
+}
+
+.col_1{
+    margin-right: 10px;
+}
+
+.col_3{
+    margin-left: 10px;
+}
+
+
+
+.inferiore p{
+    font-size: 12px;
+    color: grey;
+    padding-top: 5px;
+}
+
+.inferiore span{
+    font-size: 13px;
+    padding-top: 10px;
+    display: block;
+}
+
+.blocco_foot{
+  font-size: 13px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.blocco_foot span{
+    color: red;
 }
 
 /* debug */

@@ -11,7 +11,7 @@
 }
 
 .contenitore{
-    max-width: 1440px;
+    max-width: 1240px;
     margin: 0 auto;
 }
 
@@ -34,6 +34,41 @@ ul{
 li{
     float: left;
     padding-right: 10px;
+}
+
+.blocco_sez1{
+    min-height: 500px;
+    margin-bottom: 20px;
+    background-image: url(img/banner.jpg);
+    background-size: auto;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.sez1_testo{
+    color: white;
+    position: absolute;
+    left: 40px;
+    bottom: 60px;
+    width: 600px;
+    z-index: 10;
+}
+
+.testo_head{
+    font-size: 30px;
+}
+
+.blocco_sez1::after{
+    content: "";
+    display: block;
+    background-color: black;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 10px;
 }
 
 /* debug */

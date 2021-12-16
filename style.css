@@ -16,85 +16,77 @@
 }
 
 .blocco_head{
+    min-height: 100px;
+    margin-bottom: 20px;
+}
+
+#head_logo{
+    height: 50px;
+    border-right: 1px solid grey;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    float: left;
+    padding-right: 10px;
+}
+
+/* debug */
+
+.debug .blocco_head{
     background-color: rgb(215, 120, 220);
     height: 100px;
     margin: 20px 0;
 }
 
-.blocco_sez1{
+.debug .blocco_sez1{
     background-color: rgb(222, 207, 122);
     height: 500px;
     margin-bottom: 20px;
 }
 
-.blocco_sez2{
+.debug .blocco_sez2{
     background-color: rgb(30, 125, 248);
     height: 700px;
     margin-bottom: 5px;
 }
 
-.blocco_foot{
+.debug .blocco_foot{
     background-color: rgb(113, 44, 244);
     height: 50px;
     margin-bottom: 20px;
 }
 
-.blocco_sez2 .superiore{
+.debug .blocco_sez2 .superiore{
     height: 80px;
     margin-bottom: 20px;
     background-color: rgb(165, 200, 225);
 }
 
-.col{
+.debug .col{
     height: calc(700px - 80px - 20px - 15px);
     background-color: rgb(165, 200, 225);
     float: left;
 }
 
-.col_1,.col_3{
+.debug .col_1,.col_3{
     width: 300px;
 }
 
-.col_2{
+.debug .col_2{
     width: calc(100% - 300px - 300px - 10px - 10px);
 }
 
-.col_1{
+.debug .col_1{
     margin-right: 10px;
 }
 
-.col_3{
+.debug .col_3{
     margin-left: 10px;
 }
 
-/* debug */
-
-.debug .contenitore{
-    border: 1px solid salmon;
-    padding: 20px;
-}
-
-.debug header{
-    border: 1px dashed darkcyan;
-}
-
-.debug main{
-    border: 2px solid darkred;
-    padding: 5px;
-
-}
-
-.debug main .blocco_sez1{
-    border: 1px dashed brown;
-
-}
-
-.debug main .blocco_sez2{
-    border: 1px dashed green;
-
-}
-
-.debug footer{
-    border: 1px dashed olivedrab;
-
-}
